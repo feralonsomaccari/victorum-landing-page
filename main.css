@@ -62,16 +62,16 @@ main {
 }
 
 .section {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .overview {
   background-image: url("src/bg-rome.jpg");
-  height: 65vh;
   background-position: 50% 60%;
   width: 100%;
   color: white;
   text-align: center;
+  padding-top: 0;
 }
 .overview__wrapper {
   display: flex;
@@ -84,6 +84,10 @@ main {
 .overview__title {
   font-size: 2em;
   margin: 0;
+  line-height: 2.5rem;
+}
+.overview__desc {
+  line-height: 1.5rem;
 }
 
 /* #8e001c;
@@ -93,9 +97,16 @@ main {
   color: rgb(50, 50, 50);
 }
 .product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product__image {
+  height: 12rem;
+  max-width: 100%;
 }
 .product__desc {
   color: rgb(100, 100, 100);
+  line-height: 1.5rem;
 }
 
 .features {
@@ -111,14 +122,23 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.features_title {
+  font-size: 1.5em;
+}
 .feature__title {
+  font-size: 1em;
   margin: 0;
 }
 .feature__img {
-  height: 5rem;
+  width: 25%;
+  height: 2rem;
+  width: 2rem;
 }
 .feature_content {
   padding: 0 1rem;
+}
+.feature_desc {
+  line-height: 2rem;
 }
 
 .comments {
@@ -133,6 +153,7 @@ main {
   flex-wrap: wrap;
 }
 .comments__title {
+  font-size: 1.5em;
   margin-bottom: 3rem;
 }
 .comments_comment {
@@ -143,6 +164,7 @@ main {
   text-align: center;
   width: 85%;
   padding: 1rem;
+  line-height: initial;
 }
 .comment_photo {
   position: absolute;
@@ -151,11 +173,28 @@ main {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: gray;
+}
+.comment_photo--1 {
+  background-image: url("src/trajan.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.comment_photo--2 {
   background-image: url("src/roman-guy.png");
   background-size: 175%;
   background-position: 30% 7%;
-  background-repeat: no-repeat;
-  background-color: gray;
+}
+.comment_photo--3 {
+  background-image: url("src/cleopatra.png");
+  background-size: cover;
+  background-position: 50% 0;
+}
+.comment_photo--4 {
+  background-image: url("src/augustus.png");
+  background-size: cover;
+  background-position: 50% 0;
 }
 .comment_user {
   margin: 0;
@@ -163,6 +202,7 @@ main {
 }
 .comment_desc {
   color: rgb(100, 100, 100);
+  font-style: italic;
 }
 
 .join {
@@ -189,12 +229,17 @@ main {
   border: solid 1px rgb(50, 50, 50);
 }
 
+.brand-text {
+  font-family: "Uncial Antiqua";
+  font-size: 0.9em;
+}
+
 footer {
   background-color: #dd6d25;
   grid-area: footer;
 }
-footer a{
-    color: #fff;
+footer a {
+  color: #fff;
 }
 
 .footer__wrapper {
