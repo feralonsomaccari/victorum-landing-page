@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Lato";
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 7rem auto 10rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  background-color: #ffab49;
+  grid-area: header;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header__brand {
+  font-family: "Uncial Antiqua";
+  text-align: center;
+  padding: 0;
+  margin: 0.5rem;
+  color: #fff;
+}
+.header__brand-icon {
+  height: 2rem;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0.5rem;
+}
+.main-nav__link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.main-nav__link:hover {
+  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+}
+
+.section {
+  padding: 1rem;
+}
+
+.overview {
+  background-image: url("src/bg-rome.jpg");
+  height: 65vh;
+  background-position: 50% 60%;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.overview__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.overview__img {
+  height: 15rem;
+}
+.overview__title {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* #8e001c;
+#ffb300; */
+.product {
+  background-color: #fff;
+  color: rgb(50, 50, 50);
+}
+.product__wrapper {
+}
+.product__desc {
+  color: rgb(100, 100, 100);
+}
+
+.features {
+  background-color: #8e001c;
+  color: #fff;
+}
+.features__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features_item {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.feature__title {
+  margin: 0;
+}
+.feature__img {
+  height: 5rem;
+}
+.feature_content {
+  padding: 0 1rem;
+}
+
+.comments {
+  /* background-color: #dd6d25;
+  background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='bevel-circle' fill='%238e001c' fill-opacity='0.4'%3E%3Cpath d='M10.414 29l-8 8h33.172l-8-8H10.414zM9 27.586l-8 8V2.414l8 8v17.172zM10.414 9l-8-8h33.172l-8 8H10.414zM29 10.414l8-8v33.172l-8-8V10.414zM11 11h16v16H11V11zm8 14c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM0 0h38v38H0V0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='77' height='107' viewBox='0 0 77 107'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='stamp-collection' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M46 101a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10V6a5 5 0 0 1-5-5h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0H6a5 5 0 0 1-5 5v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5zm15-2a7 7 0 0 0-6.71 5h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0H7.71A7.01 7.01 0 0 0 3 99.29v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58A7 7 0 0 0 3 9.29V7.71A7.02 7.02 0 0 0 7.71 3h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58A7.02 7.02 0 0 0 74 7.71v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7.01 7.01 0 0 0-4.71 4.71h-1.58A7 7 0 0 0 61 99zM12 12h53v83H12V12zm51 81H14V14h49v79z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: rgb(50, 50, 50);
+}
+.comments__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comments__title {
+  margin-bottom: 3rem;
+}
+.comments_comment {
+  position: relative;
+  /* background-color: #fff; */
+  background: linear-gradient(#dd6d25 10%, #fff 10%);
+  margin: 2rem auto;
+  text-align: center;
+  width: 85%;
+  padding: 1rem;
+}
+.comment_photo {
+  position: absolute;
+  top: -3rem;
+  margin: 0 auto;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-image: url("src/roman-guy.png");
+  background-size: 175%;
+  background-position: 30% 7%;
+  background-repeat: no-repeat;
+  background-color: gray;
+}
+.comment_user {
+  margin: 0;
+  margin-top: 1rem;
+}
+.comment_desc {
+  color: rgb(100, 100, 100);
+}
+
+.join {
+  background-color: #fff;
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.join__title {
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(50, 50, 50);
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  background: #fff;
+  border: solid 1px rgb(50, 50, 50);
+}
+
+footer {
+  background-color: #dd6d25;
+  grid-area: footer;
+}
+footer a{
+    color: #fff;
+}
+
+.footer__wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.footer__author {
+  color: #fff;
+  margin: 1rem auto;
+}
