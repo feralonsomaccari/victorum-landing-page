@@ -36,7 +36,7 @@ header {
 .header__brand {
   display: flex;
   align-items: center;
-  cursor:default;
+  cursor: default;
 }
 .header__brand-title {
   font-family: "Uncial Antiqua";
@@ -59,18 +59,18 @@ header {
   color: #fff;
   cursor: pointer;
   padding: 0 1rem;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
 .main-nav__link:hover {
   text-decoration: none;
-  transform: scale(1.1) translateY(-.1rem);
+  transform: scale(1.1) translateY(-0.1rem);
 }
 
 .main-nav__link--special {
-  padding: .5rem;
-  border-radius: .5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   background-color: #fff;
-  color: rgb(50, 50, 50);
+  color:#dd6d25;
 }
 
 main {
@@ -158,9 +158,7 @@ main {
   margin: 0;
 }
 .feature__img {
-  width: 25%;
   height: 2rem;
-  width: 2rem;
 }
 .feature_content {
   padding: 0 1rem;
