@@ -16,14 +16,17 @@
     <div class="wrapper">
       <header>
         <div class="header-wrapper">
-          <img class="header__brand-icon" src="src/brand-icon.png" alt="" srcset="" />
-          <h3 class="header__brand">VICTORUM</h3>
+          <div class="header__brand">
+            <img class="header__brand-icon" src="src/brand-icon.png" alt="" srcset="" />
+            <h3 class="header__brand-title">VICTORUM</h3>
+          </div>
 
           <nav class="main-nav">
             <a class="main-nav__link" href="">Twitter</a>
             <a class="main-nav__link" href="">GitHub</a>
             <a class="main-nav__link" href="">Contact</a>
             <a class="main-nav__link" href="">Patreon</a>
+            <a class="main-nav__link main-nav__link--special" href="">Sign Up!</a>
           </nav>
         </div>
       </header>
@@ -32,15 +35,17 @@
         <section class="section overview">
           <div class="overview__wrapper">
             <img class="overview__img" src="src/roman-guy.png" alt="" srcset="" />
-            <h1 class="overview__title">Control Your Empire Easily</h1>
-            <p class="overview__desc">Victorum is a novelty way of managing your Empire. using Calendar for the festival games, army control panel, and more.</p>
+            <div class="overview__content">
+              <h1 class="overview__title">Control Your Empire Easily</h1>
+              <p class="overview__desc">Victorum is a novelty way of managing your Empire. using Calendar for the festival games, army control panel, and more.</p>
+            </div>
           </div>
         </section>
 
         <section class="section product">
           <div class="product__wrapper">
-              <div>
-                  <h3>Your Empire Will be Optimized</h3>
+              <div class="product__content">
+                  <h3 class="product__title">Your Empire Will be Optimized</h3>
                   <p class="product__desc">
                       Victorum uses the most modern technologies
                       for mantein the continuity of your dominance over the region. Fear no more your enemies
@@ -52,9 +57,10 @@
         </section>
 
         <section class="section features">
-          <h3 class="features_title">Features</h3>
+          <div class="features__content">
+          <h3 class="features__title">Features</h3>
           <div class="features__wrapper">
-            <article class="features_item">
+            <article class="features__item">
               <img class="feature__img" src="src/feature-army.png" alt="" srcset="" />
               <div class="feature_content">
                 <h4 class="feature__title">Army Control</h4>
@@ -65,7 +71,7 @@
                 </p>
               </div>
             </article>
-            <article class="features_item">
+            <article class="features__item">
               <img class="feature__img" src="src/feature-army.png" alt="" srcset="" />
               <div class="feature_content">
                 <h4 class="feature__title">Better Diplomatics</h4>
@@ -75,7 +81,7 @@
                 </p>
               </div>
             </article>
-            <article class="features_item">
+            <article class="features__item">
               <img class="feature__img" src="src/feature-army.png" alt="" srcset="" />
               <div class="feature_content">
                 <h4 class="feature__title">Festivals Management</h4>
@@ -86,7 +92,7 @@
                 </p >
               </div>
             </article>
-            <article class="features_item">
+            <article class="features__item">
               <img class="feature__img" src="src/feature-army.png" alt="" srcset="" />
               <div class="feature_content">
                 <h4 class="feature__title">Economic Monitoring</h4>
@@ -97,12 +103,14 @@
               </div>
             </article>
           </div>
+        </div>
         </section>
 
         <section class="section comments">
+          <div class="comments__content">
           <h3 class="comments__title">See what our users are saying</h3>
           <div class="comments__wrapper">
-            <article class="comments_comment">
+            <article class="comments_item">
               <div class="comment_photo comment_photo--1"></div>
               <h4 class="comment_user">Marcus Aurelius</h4>
               <p class="comment_desc">
@@ -111,7 +119,7 @@
                 and this wonderfull system."
               </p>
             </article>
-            <article class="comments_comment">
+            <article class="comments_item">
               <div class="comment_photo comment_photo--2"></div>
               <h4 class="comment_user">Claudio</h4>
               <p class="comment_desc">
@@ -119,14 +127,14 @@
                 But lo-lo-look at me now, we are better than ever."
               </p>
             </article>
-            <article class="comments_comment">
+            <article class="comments_item">
               <div class="comment_photo comment_photo--3"></div>
               <h4 class="comment_user">Cleopatra</h4>
               <p class="comment_desc">
                 "I became a success empress thanks to <span class="brand-text">Victorum</span> I didn't poison anybody."
               </p>
             </article>
-            <article class="comments_comment">
+            <article class="comments_item">
               <div class="comment_photo comment_photo--4"></div>
               <h4 class="comment_user">Caligula</h4>
               <p class="comment_desc">
@@ -134,18 +142,21 @@
               </p>
             </article>
           </div>
+        </div>
         </section>
 
         <section class="section join">
-          <h3 class="join__title">Are you ready to consolidate your Power?</h3>
-          <a class="btn" href="">Sign Up!</a>
+          <div class="join__wrapper">
+            <h3 class="join__title">Are you ready to consolidate your Power?</h3>
+            <a class="btn" href="">Sign Up!</a>
+          </div>
         </section>
       </main>
 
       <footer>
         <div class="footer__wrapper">
           <span class="footer__author"> © 2020 Victorum™ A project by <a href="https://github.com/feralonsomaccari" target="_blank" rel="noopener">Fer Alonso Maccari</a>. </span>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--footer">
             <a class="main-nav__link" href="">Twitter</a>
             <a class="main-nav__link" href="">GitHub</a>
             <a class="main-nav__link" href="">Contact</a>
