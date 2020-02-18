@@ -18,7 +18,7 @@ body {
 .wrapper {
   height: 100%;
   display: grid;
-  grid-template-rows: 7rem fit-content(100%) 7rem;
+  grid-template-rows: 7rem fit-content(100%) 8rem;
   grid-template-areas:
     "header"
     "main"
@@ -277,6 +277,7 @@ main {
 footer {
   background-color: var(--main-color);
   grid-area: footer;
+  padding: 2rem;
 }
 footer a {
   color: #fff;
@@ -288,10 +289,10 @@ footer a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
   padding: 2rem 0;
   font-size: 0.9rem;
-  padding: 2rem;
 }
 .footer__author {
   color: #fff;
@@ -313,10 +314,7 @@ footer a {
     justify-content: flex-end;
     width: 50%;
   }
-  .main-nav--footer {
-    justify-content: center;
-    width: 50%;
-  }
+
   .overview__wrapper {
     margin: 0 auto;
     justify-content: space-between;
@@ -340,7 +338,7 @@ footer a {
     width: 49%;
     height: 100%;
   }
-  .product__desc{
+  .product__desc {
     padding-right: 2rem;
   }
   .comments__wrapper {
@@ -350,22 +348,36 @@ footer a {
     width: 15rem;
     margin-right: 1rem;
   }
-  .footer__author {
-    color: #fff;
-    margin-bottom: 0;
-    font-size: 1em;
-  }
+
   .main-nav--footer {
-    font-size: 1em;
+    width: 100%;
+    font-size: .8em;
+    justify-content: center;
   }
 }
 
 @media (min-width: 50rem) {
+ 
   .overview__wrapper {
     margin: 0 auto;
     justify-content: space-between;
     flex-direction: row-reverse;
     font-size: 1.7rem;
+  }
+  
+}
+@media (min-width: 55rem) {
+  .main-nav--footer {
+    font-size: 1em;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  .footer__wrapper {
+    justify-content: space-between;
+  }
+  .footer__author {
+    margin-bottom: 0;
+    font-size: 1em;
   }
 }
 
