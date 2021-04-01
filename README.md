@@ -21,5 +21,5 @@ What I'm practicing with this:
 # Local Setup
 
 ```sh
-Just clone it and open index.html
+Clone it and open index.html
 ```
