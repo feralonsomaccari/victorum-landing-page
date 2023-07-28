@@ -1,6 +1,8 @@
 :root {
   --main-color: #dd6d25;
+  --bg-color: #ffab49;
   --text-color: rgb(50, 50, 50);
+  --text-color-secondary: #fff;
   --text-color-light: rgb(100, 100, 100);
 }
 
@@ -26,7 +28,7 @@ body {
 }
 
 header {
-  background-color: #ffab49;
+  background-color: var(--bg-color);
   grid-area: header;
   width: 100%;
 }
@@ -44,29 +46,34 @@ header {
   align-items: center;
   cursor: default;
 }
+
 .header__brand-title {
   font-family: "Uncial Antiqua";
   text-align: center;
   padding: 0;
   margin: 0.5rem;
-  color: #fff;
+  color: var(--text-color-secondary);
 }
+
 .header__brand-icon {
   height: 2rem;
 }
+
 .main-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .main-nav__link {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color-secondary);
   cursor: pointer;
   padding: 0 1rem;
   transition: all 0.1s ease-in;
 }
+
 .main-nav__link:hover {
   text-decoration: none;
   transform: scale(1.1) translateY(-0.1rem);
@@ -75,7 +82,7 @@ header {
 .main-nav__link--special {
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: var(--text-color-secondary);
   color: var(--main-color);
 }
 
@@ -91,10 +98,11 @@ main {
   background-image: url("src/bg-rome.jpg");
   background-position: 0% 60%;
   width: 100%;
-  color: #fff;
+  color: var(--text-color-secondary);
   text-align: center;
   padding-top: 0;
 }
+
 .overview__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -105,24 +113,28 @@ main {
 .overview__img {
   height: 15em;
 }
+
 .overview__title {
   font-size: 2em;
   margin: 0;
 }
+
 .overview__desc {
   line-height: 1.5em;
 }
 
 .product {
-  background-color: #fff;
+  background-color: var(--text-color-secondary);
   color: var(--text-color);
 }
+
 .product__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+
 .product__image {
   width: 100%;
   height: 100%;
@@ -131,44 +143,54 @@ main {
   cursor: pointer;
   margin-top: 1rem;
 }
+
 .product__desc {
   color: var(--text-color-light);
   line-height: 1.5rem;
 }
+
 .product__title {
   font-size: 1.5em;
 }
+
 .product__content {
   text-align: center;
 }
 
 .features {
   background-color: #8e001c;
-  color: #fff;
+  color: var(--text-color-secondary);
 }
+
 .features__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .features__item {
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
 }
+
 .features__title {
   font-size: 1.5em;
 }
+
 .feature__title {
   font-size: 1em;
   margin: 0;
 }
+
 .feature__img {
   height: 2rem;
 }
+
 .feature_content {
   padding: 0 1rem;
 }
+
 .feature_desc {
   line-height: 2rem;
 }
@@ -178,11 +200,13 @@ main {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='77' height='107' viewBox='0 0 77 107'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='stamp-collection' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M46 101a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10V6a5 5 0 0 1-5-5h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0H6a5 5 0 0 1-5 5v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5zm15-2a7 7 0 0 0-6.71 5h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0H7.71A7.01 7.01 0 0 0 3 99.29v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58A7 7 0 0 0 3 9.29V7.71A7.02 7.02 0 0 0 7.71 3h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58A7.02 7.02 0 0 0 74 7.71v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7.01 7.01 0 0 0-4.71 4.71h-1.58A7 7 0 0 0 61 99zM12 12h53v83H12V12zm51 81H14V14h49v79z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: var(--text-color);
 }
+
 .comments__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .comments__title {
   font-size: 1.5em;
   margin-bottom: 3rem;
@@ -190,13 +214,14 @@ main {
 
 .comments_item {
   position: relative;
-  background: linear-gradient(var(--main-color) 10%, #fff 10%);
+  background: linear-gradient(var(--main-color) 10%, var(--text-color-secondary) 10%);
   text-align: center;
   margin: 2rem 0;
   width: 100%;
   padding: 1rem;
   line-height: initial;
 }
+
 .comment_photo {
   position: absolute;
   top: -3rem;
@@ -207,38 +232,45 @@ main {
   background-repeat: no-repeat;
   background-color: gray;
 }
+
 .comment_photo--1 {
   background-image: url("src/trajan.png");
   background-size: cover;
   background-position: 50% 50%;
 }
+
 .comment_photo--2 {
   background-image: url("src/roman-guy.png");
   background-size: 175%;
   background-position: 30% 7%;
 }
+
 .comment_photo--3 {
   background-image: url("src/cleopatra.png");
   background-size: cover;
   background-position: 50% 0;
 }
+
 .comment_photo--4 {
   background-image: url("src/augustus.png");
   background-size: cover;
   background-position: 50% 0;
 }
+
 .comment_user {
   margin: 0;
   margin-top: 1rem;
 }
+
 .comment_desc {
   color: var(--text-color-light);
   font-style: italic;
 }
 
 .join {
-  background-color: #fff;
+  background-color: var(--text-color-secondary);
 }
+
 .join__wrapper {
   padding: 4rem 0;
   display: flex;
@@ -247,6 +279,7 @@ main {
   align-items: center;
   height: 100%;
 }
+
 .join__title {
   font-size: 1.5em;
   text-align: center;
@@ -261,14 +294,15 @@ main {
   padding: 1rem;
   text-decoration: none;
   color: var(--text-color);
-  background: #fff;
+  background: var(--text-color-secondary);;
   border: solid 1px var(--text-color);
   transition: all 0.3s;
 }
+
 .btn:hover {
   background-color: var(--main-color);
-  color: #fff;
-  border: solid 1px #fff;
+  color: var(--text-color-secondary);
+  border: solid 1px var(--text-color-secondary);;
   border-radius: 2rem;
 }
 
@@ -282,8 +316,9 @@ footer {
   grid-area: footer;
   padding: 2rem;
 }
+
 footer a {
-  color: #fff;
+  color: var(--text-color-secondary);
 }
 
 .footer__wrapper {
@@ -297,11 +332,13 @@ footer a {
   padding: 2rem 0;
   font-size: 0.9rem;
 }
+
 .footer__author {
-  color: #fff;
+  color: var(--text-color-secondary);
   margin-bottom: 1rem;
   font-size: 0.9em;
 }
+
 .main-nav--footer {
   font-size: 0.8em;
 }
@@ -310,9 +347,11 @@ footer a {
   header {
     padding: 1rem 2rem;
   }
+
   .header-wrapper {
     justify-content: space-between;
   }
+
   .main-nav {
     justify-content: flex-end;
     width: 50%;
@@ -324,28 +363,35 @@ footer a {
     flex-direction: row-reverse;
     font-size: 1.2rem;
   }
+
   .overview__content {
     width: 50%;
     text-align: left;
   }
+
   .product__wrapper {
     /* flex-wrap: nowrap; */
     justify-content: space-between;
   }
+
   .product__content {
     text-align: left;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
   }
+
   .product__image {
     margin-top: 0;
   }
+
   .product__desc {
     padding-right: 2rem;
   }
+
   .comments__wrapper {
     justify-content: space-between;
   }
+
   .comments_item {
     width: 15rem;
     margin-right: 1rem;
@@ -353,30 +399,31 @@ footer a {
 
   .main-nav--footer {
     width: 100%;
-    font-size: .8em;
+    font-size: 0.8em;
     justify-content: center;
   }
 }
 
 @media (min-width: 50rem) {
- 
   .overview__wrapper {
     margin: 0 auto;
     justify-content: space-between;
     flex-direction: row-reverse;
     font-size: 1.7rem;
   }
-  
 }
+
 @media (min-width: 55rem) {
   .main-nav--footer {
     font-size: 1em;
     justify-content: flex-end;
     width: 50%;
   }
+
   .footer__wrapper {
     justify-content: space-between;
   }
+
   .footer__author {
     margin-bottom: 0;
     font-size: 1em;
@@ -388,29 +435,36 @@ footer a {
     margin: 0 auto;
     max-width: 70rem;
   }
+
   .overview__wrapper {
     margin: 0 auto;
     max-width: 70rem;
   }
+
   .product__wrapper {
     margin: 0 auto;
     max-width: 70rem;
   }
+  
   .features__content {
     margin: 0 auto;
     max-width: 70rem;
   }
+
   .features__item {
     width: 49%;
   }
+
   .comments__content {
     margin: 0 auto;
     max-width: 70rem;
   }
+
   .join__wrapper {
     margin: 0 auto;
     max-width: 70rem;
   }
+
   .footer__wrapper {
     margin: 0 auto;
     max-width: 70rem;
