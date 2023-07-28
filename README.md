@@ -1,14 +1,12 @@
 # Victorum Landing Page
 
-This is a Landing Page for a parody fake System for managing an Empire. Because control an Empire its not an easy task
-A landing page made with a mobile-first approach, pure css and no frameworks.
+This is a Landing Page for a parody/fake System designed to humorously manage an Empire. Controlling an Empire is no easy task, but this landing page is crafted with a mobile-first approach, using pure CSS and no frameworks.
 
 Live site: https://feralonsomaccari.github.io/victorum-landing-page/
 
 ------
 ### Why?
-In order to practice I made a landing page without any framework.
-What I'm practicing with this:
+I created this landing page as a practice project to enhance my web development skills. By building it without using any frameworks, I focused on honing the following aspects of web development:
 
 - CSS
 - HTML
