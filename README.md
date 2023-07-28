@@ -4,6 +4,8 @@ This is a Landing Page for a parody/fake System designed to humorously manage an
 
 Live site: https://feralonsomaccari.github.io/victorum-landing-page/
 
+![site image](./src/caligula_quote.png)
+
 ------
 ### Why?
 I created this landing page as a practice project to enhance my web development skills. By building it without using any frameworks, I focused on honing the following aspects of web development:
